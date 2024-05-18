@@ -7,6 +7,5 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v3
         with:
-          path: our-source
-      - run: ls -al
-      - run: cat .github/workflows/checkout.yml
+          fetch-depth: 3
+      - run: git log --pretty=oneline
