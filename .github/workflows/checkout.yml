@@ -3,6 +3,6 @@ on: push
 jobs:
   checkout:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - run: ls -al
       - uses: actions/checkout@v3
